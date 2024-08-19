@@ -903,14 +903,38 @@
     </style>
   </head>
   <body>
-    <a href="index-dark.html">Test dark version</a>
+    <a href="index.html" style="font-weight: bold">Light version</a> -
+    <a href="index-dark.html">Dark version</a> -
+    <a href="index-high-contrast.html">High contrast</a>
 
-    <h1>Badge</h1>
+    <h1>Components</h1>
+
+    <h2>vscode-badge</h2>
 
     <div style="display: flex; gap: 0.5em">
       <vscode-badge>9</vscode-badge>
       <vscode-badge>99</vscode-badge>
       <vscode-badge>999</vscode-badge>
+    </div>
+
+    <h2>vscode-label</h2>
+
+    <div style="display: flex; flex-direction: column; gap: 0.5em">
+      <vscode-label>Test label</vscode-label>
+      <vscode-label>Test label with a longer title</vscode-label>
+      <div style="width: 50px">
+        <vscode-label>Test ellipsis</vscode-label>
+      </div>
+    </div>
+
+    <h2>vscode-link</h2>
+
+    <div style="display: flex; flex-direction: column; gap: 0.5em">
+      <vscode-link href="#">Test link</vscode-link>
+      <vscode-link href="#" hreftitle="Title of the link"
+        >Link with title</vscode-link
+      >
+      <vscode-link href="#" hreflang="nl">Link with hreflang</vscode-link>
     </div>
   </body>
 </html>

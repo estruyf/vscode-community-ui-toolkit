@@ -2,6 +2,33 @@
 
 TBA
 
+## Web Components
+
+### Existing component support
+
+- [x] badge
+- [ ] button
+- [ ] checkbox
+- [ ] data-grid
+- [ ] divider
+- [ ] dropdown
+- [ ] link
+- [ ] option
+- [ ] panels
+- [ ] progress-ring
+- [ ] radio
+- [ ] radio-group
+- [ ] tag
+- [ ] text-area
+- [ ] text-field
+
+### New components
+
+- [ ] icon
+- [x] label
+- [ ] loader
+- [ ] ...
+
 ## Local Development
 
 1. Clone the repository
@@ -14,7 +41,9 @@ TBA
 - [ ] Add all components from the `@vscode/webview-ui-toolkit` package
 - [ ] Add documentation for all components
 - [ ] Add examples for all components
-- [ ] Add high-contrast theme for local testing and development
+- [x] Add high-contrast theme for local testing and development
+- [ ] Release process
+- [ ] React support (separate package)
 - [ ] ...
 
 ## References
