@@ -2,7 +2,7 @@
 
 The `vscode-community-ui-toolkit` is a web components library provided by the Visual Studio Code community for building [webview-based extensions](https://code.visualstudio.com/api/extension-guides/webview) in Visual Studio Code.
 
-> ![NOTE]
+> [!NOTE]
 > The library is based on the [VS Code Webview UI Toolkit](https://github.com/microsoft/vscode-webview-ui-toolkit), which has announced to be deprecated on January 1, 2025.
 
 ## Web Components
