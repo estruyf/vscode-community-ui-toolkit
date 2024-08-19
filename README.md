@@ -12,7 +12,7 @@ TBA
 - [ ] data-grid
 - [ ] divider
 - [ ] dropdown
-- [ ] link
+- [x] link
 - [ ] option
 - [ ] panels
 - [ ] progress-ring
