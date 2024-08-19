@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>&lt;my-element> Demo</title>
+    <title>Component testing</title>
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="../node_modules/lit/polyfill-support.js"></script>
     <script type="module" src="../dist/index.js"></script>
@@ -882,34 +882,29 @@
         --vscode-gitDecoration-stageDeletedResourceForeground: #ad0707;
         --vscode-gitDecoration-conflictingResourceForeground: #f46715;
         --vscode-gitDecoration-submoduleResourceForeground: #656d76;
-        --frontmatter-lightbox-background: #ffffffbf;
-        --frontmatter-text: var(--vscode-editor-foreground);
-        --frontmatter-secondary-text: var(--vscode-editorHint-foreground);
-        --frontmatter-link: var(--vscode-textLink-foreground);
-        --frontmatter-link-hover: var(--vscode-textLink-activeForeground);
-        --frontmatter-list-text: var(--vscode-editor-foreground);
-        --frontmatter-list-background: var(
-          --vscode-list-activeSelectionBackground
-        );
-        --frontmatter-list-hover-background: var(--vscode-list-hoverBackground);
-        --frontmatter-list-selected-background: var(
-          --vscode-list-activeSelectionBackground
-        );
-        --frontmatter-list-selected-text: var(
-          --vscode-list-activeSelectionForeground
-        );
-        --frontmatter-nav-active: #0e131f;
-        --frontmatter-nav-inactive: #0e131f99;
-        --frontmatter-border: var(--vscode-panel-border);
-        --frontmatter-border-preserve: #d0d7de;
-        --frontmatter-button-background: #15c2cb;
-        --frontmatter-button-hoverBackground: #138e97;
-        --frontmatter-sideBar-background: #f1f3f5;
-        --frontmatter-border-active: #838a91;
+      }
+
+      body {
+        font-family: var(--vscode-font-family);
+        font-size: var(--vscode-font-size);
+        color: var(--vscode-editor-foreground);
+        background-color: var(--vscode-editor-background);
+        margin: 0;
+        padding: 16px;
+      }
+
+      a {
+        color: var(--vscode-textLink-foreground);
+
+        &:hover {
+          color: var(--vscode-textLink-activeForeground);
+        }
       }
     </style>
   </head>
   <body>
+    <a href="index-dark.html">Test dark version</a>
+
     <h1>Badge</h1>
 
     <div style="display: flex; gap: 0.5em">
