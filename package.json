@@ -1,7 +1,7 @@
 {
   "name": "vscode-community-ui-toolkit",
   "version": "0.0.1",
-  "description": "TBA",
+  "description": "A web components library provided by the Visual Studio Code community for building webview-based extensions in Visual Studio Code",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "type": "module",
