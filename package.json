@@ -1,0 +1,47 @@
+{
+  "name": "vscode-community-ui-toolkit",
+  "version": "0.0.1",
+  "description": "TBA",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "dev:start": "npm run build:watch & npm run serve",
+    "clean": "rimraf dist",
+    "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
+    "lint:eslint": "eslint 'src/**/*.ts'",
+    "lint:lit-analyzer": "lit-analyzer",
+    "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --write",
+    "analyze": "cem analyze --litelement --globs \"src/**/*.ts\"",
+    "analyze:watch": "cem analyze --litelement --globs \"src/**/*.ts\" --watch",
+    "serve": "wds --watch",
+    "serve:prod": "MODE=prod npm run serve"
+  },
+  "keywords": [
+    "web-components",
+    "lit-element",
+    "typescript",
+    "lit",
+    "vscode"
+  ],
+  "author": "Elio Struyf <elio@struyfconsulting.be>",
+  "license": "MIT",
+  "dependencies": {
+    "lit": "^3.2.0"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.6.3",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "@web/dev-server": "^0.4.6",
+    "@web/dev-server-legacy": "^1.0.0",
+    "@webcomponents/webcomponentsjs": "^2.8.0",
+    "eslint": "^8.15.0",
+    "lit-analyzer": "^2.0.3",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "typescript": "~5.5.0"
+  }
+}
