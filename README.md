@@ -1,5 +1,8 @@
 # Visual Studio Code - Community UI Toolkit
 
+> [!WARNING]
+> This project is in an early stage of development and not ready for production use.
+
 The `vscode-community-ui-toolkit` is a web components library provided by the Visual Studio Code community for building [webview-based extensions](https://code.visualstudio.com/api/extension-guides/webview) in Visual Studio Code.
 
 > [!NOTE]
