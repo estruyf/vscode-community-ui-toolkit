@@ -19,7 +19,7 @@ export class Link extends LitElement {
   `;
 
   @property({ type: String })
-  href: string = '';
+  href = '';
 
   @property({ type: String })
   hreftitle?: string;

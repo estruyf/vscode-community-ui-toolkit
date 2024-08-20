@@ -13,7 +13,7 @@ The `vscode-community-ui-toolkit` is a web components library provided by the Vi
 - [ ] button
 - [ ] checkbox
 - [ ] data-grid
-- [ ] divider
+- [x] divider
 - [ ] dropdown
 - [x] link
 - [ ] option
