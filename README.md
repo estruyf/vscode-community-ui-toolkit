@@ -34,7 +34,7 @@ Check our issue list for the current status of the components.
 - [ ] progress-ring
 - [ ] radio
 - [ ] radio-group
-- [ ] tag
+- [x] tag
 - [ ] text-area
 - [ ] text-field
 
