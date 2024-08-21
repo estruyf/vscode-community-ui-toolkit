@@ -1,0 +1,48 @@
+{
+	"name": "community-ui-toolkit-samples",
+	"description": "A Community UI Toolkit Webview Samples",
+	"version": "0.0.1",
+	"publisher": "ui-toolkit-samples",
+	"author": "Ido Perez",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onWebviewPanel:communityUiToolkit"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "openSamplesWebview",
+				"title": "Start Community UI Toolkit Sample",
+				"category": "Samples Webview"
+			}
+		]
+	},
+	"scripts": {
+		"prepare": "cp ../../dist/bundle.js media",
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint \"src/**/*.ts\"",
+		"watch": "tsc -w -p ./"
+	},
+	"dependencies": {
+		"lit": "^3.2.0",
+		"@webcomponents/webcomponentsjs": "^2.8.0"
+	},
+	"devDependencies": {
+		"lit-analyzer": "^2.0.3",
+		"@types/node": "^18",
+		"@types/vscode": "^1.73.0",
+		"@types/vscode-webview": "^1.57.0",
+		"@typescript-eslint/eslint-plugin": "^7.14.0",
+		"@typescript-eslint/parser": "^7.14.0",
+		"eslint": "^8.57.0",
+		"typescript": "^5.5.2"
+	}
+}
