@@ -10,9 +10,15 @@ The `vscode-community-ui-toolkit` is a web components library provided by the Vi
 
 ## Join the community
 
-Join the [VS Code UI Toolkit](https://discord.gg/wtv7wS2A79) Discord server to discuss the development of the `vscode-community-ui-toolkit`..
+Join the [VS Code UI Toolkit](https://discord.gg/wtv7wS2A79) Discord server to discuss the development of the `vscode-community-ui-toolkit`.
+
+## Contributing
+
+If you want to contribute, please find an open issue you would like to work on and leave us a comment. If you have any questions, feel free to ask in the issue or in the Discord server.
 
 ## Web Components
+
+Check our issue list for the current status of the components.
 
 ### Existing component support
 
@@ -48,6 +54,7 @@ Join the [VS Code UI Toolkit](https://discord.gg/wtv7wS2A79) Discord server to d
 
 ## Todo
 
+- [ ] Project name
 - [ ] Add all components from the `@vscode/webview-ui-toolkit` package
 - [ ] Add documentation for all components
 - [ ] Add examples for all components
