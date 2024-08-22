@@ -9,7 +9,7 @@ export class Tag extends LitElement {
       border: 1px solid var(--vscode-button-border);
       border-radius: 2px;
       color: var(--vscode-badge-foreground);
-      padding: calc(2px) calc(4px);
+      padding: 2px 4px;
       text-transform: uppercase;
     }
   `;
