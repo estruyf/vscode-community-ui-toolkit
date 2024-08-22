@@ -1,6 +1,7 @@
-/node_modules/
-/lib/
-/dist/
-/test/
+node_modules/
+lib/
+dist/
+test/
+out/
 
 custom-elements.json
