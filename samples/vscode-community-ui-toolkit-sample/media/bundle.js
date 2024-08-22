@@ -379,4 +379,23 @@ Link = __decorate([
     t('vscode-link')
 ], Link);
 
-export { Badge, Button, Divider, Label, Link };
+let Tag = class Tag extends h {
+    render() {
+        return ke ` <slot></slot> `;
+    }
+};
+Tag.styles = i$1 `
+    :host {
+      background-color: var(--vscode-badge-background);
+      border: 1px solid var(--vscode-button-border);
+      border-radius: 2px;
+      color: var(--vscode-badge-foreground);
+      padding: 2px 4px;
+      text-transform: uppercase;
+    }
+  `;
+Tag = __decorate([
+    t('vscode-tag')
+], Tag);
+
+export { Badge, Button, Divider, Label, Link, Tag };
