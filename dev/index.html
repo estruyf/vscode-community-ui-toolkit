@@ -16,12 +16,12 @@
         const style = document.querySelector('link[id="vscode-theme"]');
         style.href = `${theme}.css`;
 
-        const buttons = document.querySelectorAll('nav button');
+        const buttons = document.querySelectorAll("nav button");
         buttons.forEach((button) => {
-          button.style.fontWeight = 'normal';
+          button.style.fontWeight = "normal";
         });
 
-        document.querySelector(`#${theme}`).style.fontWeight = 'bold';
+        document.querySelector(`#${theme}`).style.fontWeight = "bold";
       };
     </script>
     <style>
@@ -40,6 +40,7 @@
 
         &:hover {
           color: var(--vscode-textLink-activeForeground);
+          cursor: pointer;
         }
       }
 
@@ -82,11 +83,21 @@
         style="font-weight: bold"
         onclick="updateStyle('light')"
       >
-        Light version
+        Light
       </button>
-      - <button id="dark" onclick="updateStyle('dark')">Dark version</button> -
-      <button id="high-contrast" onclick="updateStyle('high-contrast')">
-        High contrast
+      - <button id="dark" onclick="updateStyle('dark')">Dark</button> -
+      <button
+        id="high-contrast-dark"
+        onclick="updateStyle('high-contrast-dark')"
+      >
+        High contrast (dark)
+      </button>
+      -
+      <button
+        id="high-contrast-light"
+        onclick="updateStyle('high-contrast-light')"
+      >
+        High contrast (light)
       </button>
     </nav>
 
