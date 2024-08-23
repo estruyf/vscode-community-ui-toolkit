@@ -1,11 +1,11 @@
 :root {
+  --text-link-decoration: none;
   --vscode-font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   --vscode-font-weight: normal;
   --vscode-font-size: 13px;
-  --vscode-editor-font-family: 'Operator Mono Lig', 'Cascadia Code';
+  --vscode-editor-font-family: Menlo, Monaco, 'Courier New', monospace;
   --vscode-editor-font-weight: normal;
-  --vscode-editor-font-size: 15px;
-  --text-link-decoration: none;
+  --vscode-editor-font-size: 13px;
   --vscode-foreground: #ffffff;
   --vscode-disabledForeground: #a5a5a5;
   --vscode-errorForeground: #f48771;
@@ -84,12 +84,7 @@
   --vscode-editorOverviewRuler-incomingContentForeground: #c3df6f;
   --vscode-editorOverviewRuler-commonContentForeground: #c3df6f;
   --vscode-editorOverviewRuler-findMatchForeground: #ab5a00;
-  --vscode-editorOverviewRuler-selectionHighlightForeground: rgba(
-    160,
-    160,
-    160,
-    0.8
-  );
+  --vscode-editorOverviewRuler-selectionHighlightForeground: rgba(160, 160, 160, 0.8);
   --vscode-problemsErrorIcon-foreground: #f48771;
   --vscode-problemsWarningIcon-foreground: #ffd370;
   --vscode-problemsInfoIcon-foreground: #3794ff;
@@ -270,24 +265,9 @@
   --vscode-editor-wordHighlightBorder: #f38518;
   --vscode-editor-wordHighlightStrongBorder: #f38518;
   --vscode-editor-wordHighlightTextBorder: #f38518;
-  --vscode-editorOverviewRuler-wordHighlightForeground: rgba(
-    160,
-    160,
-    160,
-    0.8
-  );
-  --vscode-editorOverviewRuler-wordHighlightStrongForeground: rgba(
-    192,
-    160,
-    192,
-    0.8
-  );
-  --vscode-editorOverviewRuler-wordHighlightTextForeground: rgba(
-    160,
-    160,
-    160,
-    0.8
-  );
+  --vscode-editorOverviewRuler-wordHighlightForeground: rgba(160, 160, 160, 0.8);
+  --vscode-editorOverviewRuler-wordHighlightStrongForeground: rgba(192, 160, 192, 0.8);
+  --vscode-editorOverviewRuler-wordHighlightTextForeground: rgba(160, 160, 160, 0.8);
   --vscode-peekViewTitle-background: #000000;
   --vscode-peekViewTitleLabel-foreground: #ffffff;
   --vscode-peekViewTitleDescription-foreground: rgba(255, 255, 255, 0.6);
@@ -438,12 +418,7 @@
   --vscode-debugToolBar-background: #000000;
   --vscode-debugIcon-startForeground: #89d185;
   --vscode-editor-stackFrameHighlightBackground: rgba(255, 255, 0, 0.2);
-  --vscode-editor-focusedStackFrameHighlightBackground: rgba(
-    122,
-    189,
-    122,
-    0.3
-  );
+  --vscode-editor-focusedStackFrameHighlightBackground: rgba(122, 189, 122, 0.3);
   --vscode-inlineChat-foreground: #ffffff;
   --vscode-inlineChat-background: #0c141f;
   --vscode-inlineChat-border: #6fc3df;
@@ -455,31 +430,11 @@
   --vscode-mergeEditor-change\.word\.background: rgba(156, 204, 44, 0.2);
   --vscode-mergeEditor-changeBase\.background: #4b1818;
   --vscode-mergeEditor-changeBase\.word\.background: #6f1313;
-  --vscode-mergeEditor-conflict\.unhandledUnfocused\.border: rgba(
-    255,
-    166,
-    0,
-    0.48
-  );
+  --vscode-mergeEditor-conflict\.unhandledUnfocused\.border: rgba(255, 166, 0, 0.48);
   --vscode-mergeEditor-conflict\.unhandledFocused\.border: #ffa600;
-  --vscode-mergeEditor-conflict\.handledUnfocused\.border: rgba(
-    134,
-    134,
-    134,
-    0.29
-  );
-  --vscode-mergeEditor-conflict\.handledFocused\.border: rgba(
-    193,
-    193,
-    193,
-    0.8
-  );
-  --vscode-mergeEditor-conflict\.handled\.minimapOverViewRuler: rgba(
-    173,
-    172,
-    168,
-    0.93
-  );
+  --vscode-mergeEditor-conflict\.handledUnfocused\.border: rgba(134, 134, 134, 0.29);
+  --vscode-mergeEditor-conflict\.handledFocused\.border: rgba(193, 193, 193, 0.8);
+  --vscode-mergeEditor-conflict\.handled\.minimapOverViewRuler: rgba(173, 172, 168, 0.93);
   --vscode-mergeEditor-conflict\.unhandled\.minimapOverViewRuler: #fcba03;
   --vscode-mergeEditor-conflictingLines\.background: rgba(255, 234, 0, 0.28);
   --vscode-settings-headerForeground: #ffffff;
@@ -512,12 +467,7 @@
   --vscode-terminal-selectionBackground: #ffffff;
   --vscode-terminal-inactiveSelectionBackground: rgba(255, 255, 255, 0.7);
   --vscode-terminal-selectionForeground: #000000;
-  --vscode-terminalCommandDecoration-defaultBackground: rgba(
-    255,
-    255,
-    255,
-    0.5
-  );
+  --vscode-terminalCommandDecoration-defaultBackground: rgba(255, 255, 255, 0.5);
   --vscode-terminalCommandDecoration-successBackground: #1b81a8;
   --vscode-terminalCommandDecoration-errorBackground: #f14c4c;
   --vscode-terminalOverviewRuler-cursorForeground: rgba(160, 160, 160, 0.8);
@@ -545,12 +495,7 @@
   --vscode-testing-coverCountBadgeBackground: #000000;
   --vscode-testing-coverCountBadgeForeground: #ffffff;
   --vscode-testing-message\.error\.decorationForeground: #ffffff;
-  --vscode-testing-message\.info\.decorationForeground: rgba(
-    255,
-    255,
-    255,
-    0.5
-  );
+  --vscode-testing-message\.info\.decorationForeground: rgba(255, 255, 255, 0.5);
   --vscode-testing-iconErrored\.retired: rgba(241, 76, 76, 0.7);
   --vscode-testing-iconFailed\.retired: rgba(241, 76, 76, 0.7);
   --vscode-testing-iconPassed\.retired: rgba(115, 201, 145, 0.7);
@@ -663,74 +608,7 @@
   --vscode-gitDecoration-stageDeletedResourceForeground: #c74e39;
   --vscode-gitDecoration-conflictingResourceForeground: #c74e39;
   --vscode-gitDecoration-submoduleResourceForeground: #8db9e2;
-  --vscode-gitlens-gutterBackgroundColor: rgba(255, 255, 255, 0.07);
-  --vscode-gitlens-gutterForegroundColor: #bebebe;
-  --vscode-gitlens-gutterUncommittedForegroundColor: #00bcf2;
-  --vscode-gitlens-trailingLineBackgroundColor: rgba(0, 0, 0, 0);
-  --vscode-gitlens-trailingLineForegroundColor: rgba(153, 153, 153, 0.6);
-  --vscode-gitlens-lineHighlightBackgroundColor: rgba(0, 188, 242, 0.2);
-  --vscode-gitlens-lineHighlightOverviewRulerColor: rgba(0, 188, 242, 0.6);
-  --vscode-gitlens-openAutolinkedIssueIconColor: #68ff79;
-  --vscode-gitlens-closedAutolinkedIssueIconColor: #8945ff;
-  --vscode-gitlens-closedPullRequestIconColor: #ff544b;
-  --vscode-gitlens-openPullRequestIconColor: #68ff79;
-  --vscode-gitlens-mergedPullRequestIconColor: #8945ff;
-  --vscode-gitlens-unpublishedChangesIconColor: #4dff88;
-  --vscode-gitlens-unpublishedCommitIconColor: #4dff88;
-  --vscode-gitlens-unpulledChangesIconColor: #ff874c;
-  --vscode-gitlens-decorations\.addedForegroundColor: #a1e3ad;
-  --vscode-gitlens-decorations\.copiedForegroundColor: #73c991;
-  --vscode-gitlens-decorations\.deletedForegroundColor: #c74e39;
-  --vscode-gitlens-decorations\.ignoredForegroundColor: #a7a8a9;
-  --vscode-gitlens-decorations\.modifiedForegroundColor: #e2c08d;
-  --vscode-gitlens-decorations\.untrackedForegroundColor: #73c991;
-  --vscode-gitlens-decorations\.renamedForegroundColor: #73c991;
-  --vscode-gitlens-decorations\.branchAheadForegroundColor: #4dff88;
-  --vscode-gitlens-decorations\.branchBehindForegroundColor: #ff874c;
-  --vscode-gitlens-decorations\.branchDivergedForegroundColor: #d8af1b;
-  --vscode-gitlens-decorations\.branchUnpublishedForegroundColor: #4dff88;
-  --vscode-gitlens-decorations\.branchMissingUpstreamForegroundColor: #c74e39;
-  --vscode-gitlens-decorations\.statusMergingOrRebasingConflictForegroundColor: #c74e39;
-  --vscode-gitlens-decorations\.statusMergingOrRebasingForegroundColor: #d8af1b;
-  --vscode-gitlens-decorations\.workspaceRepoMissingForegroundColor: #d3d3d3;
-  --vscode-gitlens-decorations\.workspaceCurrentForegroundColor: #4dff88;
-  --vscode-gitlens-decorations\.workspaceRepoOpenForegroundColor: #4dff88;
-  --vscode-gitlens-decorations\.worktreeHasUncommittedChangesForegroundColor: #e2c08d;
-  --vscode-gitlens-decorations\.worktreeMissingForegroundColor: #c74e39;
-  --vscode-gitlens-graphLane1Color: #15a0bf;
-  --vscode-gitlens-graphLane2Color: #0669f7;
-  --vscode-gitlens-graphLane3Color: #8e00c2;
-  --vscode-gitlens-graphLane4Color: #c517b6;
-  --vscode-gitlens-graphLane5Color: #d90171;
-  --vscode-gitlens-graphLane6Color: #cd0101;
-  --vscode-gitlens-graphLane7Color: #f25d2e;
-  --vscode-gitlens-graphLane8Color: #f2ca33;
-  --vscode-gitlens-graphLane9Color: #7bd938;
-  --vscode-gitlens-graphLane10Color: #2ece9d;
-  --vscode-gitlens-graphChangesColumnAddedColor: #347d39;
-  --vscode-gitlens-graphChangesColumnDeletedColor: #c93c37;
-  --vscode-gitlens-graphMinimapMarkerHeadColor: #05e617;
-  --vscode-gitlens-graphScrollMarkerHeadColor: #05e617;
-  --vscode-gitlens-graphMinimapMarkerUpstreamColor: #09ae17;
-  --vscode-gitlens-graphScrollMarkerUpstreamColor: #09ae17;
-  --vscode-gitlens-graphMinimapMarkerHighlightsColor: #fbff0a;
-  --vscode-gitlens-graphScrollMarkerHighlightsColor: #fbff0a;
-  --vscode-gitlens-graphMinimapMarkerLocalBranchesColor: #3087cf;
-  --vscode-gitlens-graphScrollMarkerLocalBranchesColor: #3087cf;
-  --vscode-gitlens-graphMinimapMarkerPullRequestsColor: #c76801;
-  --vscode-gitlens-graphScrollMarkerPullRequestsColor: #c76801;
-  --vscode-gitlens-graphMinimapMarkerRemoteBranchesColor: #2b5e88;
-  --vscode-gitlens-graphScrollMarkerRemoteBranchesColor: #2b5e88;
-  --vscode-gitlens-graphMinimapMarkerStashesColor: #b34db3;
-  --vscode-gitlens-graphScrollMarkerStashesColor: #b34db3;
-  --vscode-gitlens-graphMinimapMarkerTagsColor: #6b562e;
-  --vscode-gitlens-graphScrollMarkerTagsColor: #6b562e;
-  --vscode-gitlens-launchpadIndicatorMergeableColor: #68ff79;
-  --vscode-gitlens-launchpadIndicatorMergeableHoverColor: #68ff79;
-  --vscode-gitlens-launchpadIndicatorBlockedColor: #ff003c;
-  --vscode-gitlens-launchpadIndicatorBlockedHoverColor: #ff003c;
-  --vscode-gitlens-launchpadIndicatorAttentionColor: #d8af1b;
-  --vscode-gitlens-launchpadIndicatorAttentionHoverColor: #d8af1b;
+  --vscode-lintlens-annotationColor: rgba(153, 153, 153, 0.6);
   --vscode-issues-newIssueDecoration: #ffffff;
   --vscode-issues-open: #ffffff;
   --vscode-issues-closed: #ffffff;
@@ -739,15 +617,34 @@
   --vscode-pullRequests-open: #000000;
   --vscode-pullRequests-closed: #000000;
   --vscode-pullRequests-notification: #ffffff;
-  --vscode-remoteHub-decorations\.addedForegroundColor: #1b5225;
-  --vscode-remoteHub-decorations\.modifiedForegroundColor: #e2c08d;
-  --vscode-remoteHub-decorations\.deletedForegroundColor: #c74e39;
-  --vscode-remoteHub-decorations\.submoduleForegroundColor: #8db9e2;
-  --vscode-remoteHub-decorations\.conflictForegroundColor: #c74e39;
-  --vscode-remoteHub-decorations\.incomingAddedForegroundColor: #1b5225;
-  --vscode-remoteHub-decorations\.incomingModifiedForegroundColor: #e2c08d;
-  --vscode-remoteHub-decorations\.incomingDeletedForegroundColor: #c74e39;
-  --vscode-remoteHub-decorations\.incomingRenamedForegroundColor: #73c991;
-  --vscode-remoteHub-decorations\.ignoredResourceForeground: #a7a8a9;
-  --vscode-remoteHub-decorations\.workspaceRepositoriesView\.hasUncommittedChangesForegroundColor: #e2c08d;
+  --vscode-errorLens-errorBackground: rgba(228, 84, 84, 0.11);
+  --vscode-errorLens-errorMessageBackground: rgba(228, 84, 84, 0.1);
+  --vscode-errorLens-errorRangeBackground: rgba(228, 84, 84, 0.1);
+  --vscode-errorLens-errorBackgroundLight: rgba(228, 84, 84, 0.13);
+  --vscode-errorLens-errorForeground: #ff6464;
+  --vscode-errorLens-errorForegroundLight: #e45454;
+  --vscode-errorLens-warningBackground: rgba(255, 148, 47, 0.11);
+  --vscode-errorLens-warningMessageBackground: rgba(255, 148, 47, 0.1);
+  --vscode-errorLens-warningRangeBackground: rgba(255, 148, 47, 0.1);
+  --vscode-errorLens-warningBackgroundLight: rgba(255, 148, 47, 0.13);
+  --vscode-errorLens-warningForeground: #fa973a;
+  --vscode-errorLens-warningForegroundLight: #ff942f;
+  --vscode-errorLens-infoBackground: rgba(0, 183, 228, 0.13);
+  --vscode-errorLens-infoMessageBackground: rgba(0, 183, 228, 0.1);
+  --vscode-errorLens-infoRangeBackground: rgba(0, 183, 228, 0.1);
+  --vscode-errorLens-infoBackgroundLight: rgba(0, 183, 228, 0.13);
+  --vscode-errorLens-infoForeground: #00b7e4;
+  --vscode-errorLens-infoForegroundLight: #00b7e4;
+  --vscode-errorLens-hintBackground: rgba(23, 162, 162, 0.13);
+  --vscode-errorLens-hintMessageBackground: rgba(23, 162, 162, 0.1);
+  --vscode-errorLens-hintRangeBackground: rgba(23, 162, 162, 0.1);
+  --vscode-errorLens-hintBackgroundLight: rgba(23, 162, 162, 0.13);
+  --vscode-errorLens-hintForeground: #2faf64;
+  --vscode-errorLens-hintForegroundLight: #2faf64;
+  --vscode-errorLens-statusBarIconErrorForeground: #ff6464;
+  --vscode-errorLens-statusBarIconWarningForeground: #fa973a;
+  --vscode-errorLens-statusBarErrorForeground: #ff6464;
+  --vscode-errorLens-statusBarWarningForeground: #fa973a;
+  --vscode-errorLens-statusBarInfoForeground: #00b7e4;
+  --vscode-errorLens-statusBarHintForeground: #2faf64;
 }
