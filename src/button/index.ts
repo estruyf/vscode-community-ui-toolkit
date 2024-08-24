@@ -1,4 +1,18 @@
-import { LitElement, html, css } from 'lit';
+import {
+  fontFamily,
+  fontSize,
+  foreground,
+  buttonForeground,
+  buttonBackground,
+  buttonBorder,
+  focusBorder,
+  buttonHoverBackground,
+  buttonSecondaryBackground,
+  buttonSecondaryForeground,
+  buttonSecondaryHoverBackground,
+  contrastActiveBorder,
+} from './../constants';
+import { LitElement, html, css, unsafeCSS } from 'lit';
 import { property, customElement } from 'lit/decorators.js';
 
 const COMPONENT_NAME = 'vscode-button';
@@ -11,11 +25,11 @@ export class Button extends LitElement {
     :host {
       display: inline-flex;
       outline: none;
-      font-family: var(--vscode-font-family);
-      font-size: var(--vscode-font-size, 13px);
+      font-family: ${unsafeCSS(fontFamily)};
+      font-size: ${unsafeCSS(fontSize)};
       line-height: normal;
-      color: var(--vscode-button-foreground, #ffffff);
-      background: var(--vscode-button-background, #0e639c);
+      color: ${unsafeCSS(buttonForeground)};
+      background: ${unsafeCSS(buttonBackground)};
       border-radius: 2px;
       fill: currentColor;
       cursor: pointer;
@@ -33,7 +47,7 @@ export class Button extends LitElement {
       white-space: wrap;
       outline: none;
       text-decoration: none;
-      border: 1px solid var(--vscode-button-border, transparent);
+      border: 1px solid ${unsafeCSS(buttonBorder)};
       color: inherit;
       border-radius: inherit;
       fill: inherit;
@@ -41,7 +55,7 @@ export class Button extends LitElement {
       font-family: inherit;
 
       &:focus-visible {
-        outline: 1px solid var(--vscode-focusBorder, #007fd4);
+        outline: 1px solid ${unsafeCSS(focusBorder)};
         outline-offset: 2px;
       }
 
@@ -51,47 +65,47 @@ export class Button extends LitElement {
     }
 
     :host(:hover) {
-      background: var(--vscode-button-hoverBackground, #1177bb);
+      background: ${unsafeCSS(buttonHoverBackground)};
     }
 
     :host(:active) {
-      background: var(--vscode-button-background, #0e639c);
+      background: ${unsafeCSS(buttonBackground)};
     }
 
     :host([disabled]) {
       opacity: 0.4;
-      background: var(--vscode-button-background, #0e639c);
+      background: ${unsafeCSS(buttonBackground)};
       cursor: not-allowed;
     }
 
     /* Secondary button */
     :host([appearance='secondary']) {
-      background: var(--vscode-button-secondaryBackground, #3a3d41);
-      color: var(--vscode-button-secondaryForeground, #ffffff);
+      background: ${unsafeCSS(buttonSecondaryBackground)};
+      color: ${unsafeCSS(buttonSecondaryForeground)};
     }
 
     :host([appearance='secondary']:hover) {
-      background: var(--vscode-button-secondaryHoverBackground, #484b4f);
+      background: ${unsafeCSS(buttonSecondaryHoverBackground)};
     }
 
     :host([appearance='secondary']:active) {
-      background: var(--vscode-button-secondaryBackground, #3a3d41);
+      background: ${unsafeCSS(buttonSecondaryHoverBackground)};
     }
 
     :host([appearance='secondary'][disabled]) {
-      background: var(--vscode-button-secondaryBackground, #3a3d41);
+      background: ${unsafeCSS(buttonSecondaryHoverBackground)};
     }
 
     /* Icon button */
     :host([appearance='icon']) {
       background: transparent;
       border-radius: 5px;
-      color: var(--vscode-foreground, #cccccc);
+      color: ${unsafeCSS(foreground)};
     }
 
     :host([appearance='icon']:hover) {
       background: rgba(90, 93, 94, 0.31);
-      outline: 1px dotted var(--vscode-contrastActiveBorder, #f38518);
+      outline: 1px dotted ${unsafeCSS(contrastActiveBorder)};
       outline-offset: -1px;
     }
 
@@ -105,7 +119,7 @@ export class Button extends LitElement {
     }
 
     :host([appearance='icon']) .control:focus-visible {
-      outline: 1px solid var(--vscode-focusBorder, #007fd4);
+      outline: 1px solid ${unsafeCSS(focusBorder)};
       outline-offset: 0;
     }
 
