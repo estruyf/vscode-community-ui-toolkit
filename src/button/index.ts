@@ -1,5 +1,6 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css, nothing } from 'lit';
 import { property, customElement } from 'lit/decorators.js';
+import { ifDefined } from 'lit/directives/if-defined.js';
 
 const COMPONENT_NAME = 'vscode-button';
 
@@ -113,10 +114,8 @@ export class Button extends LitElement {
       background: transparent;
     }
 
-    .start {
-      display: flex;
-    }
-
+    .start,
+    .end,
     .content {
       display: flex;
     }
@@ -124,10 +123,47 @@ export class Button extends LitElement {
     .start ::slotted(*) {
       margin-inline-end: 8px;
     }
+
+    .end ::slotted(*) {
+      margin-inline-start: 8px;
+    }
   `;
 
   @property({ type: String })
   appearance: ButtonAppearance = 'primary';
+
+  @property({ type: Boolean, reflect: true })
+  disabled = false;
+
+  @property({ type: String, reflect: true })
+  form?: string;
+
+  @property({ type: String, reflect: true })
+  formaction?: string;
+
+  @property({ type: String, reflect: true })
+  formenctype?:
+    | 'application/x-www-form-urlencoded'
+    | 'multipart/form-data'
+    | 'text/plain';
+
+  @property({ type: String, reflect: true })
+  formmethod?: 'get' | 'post';
+
+  @property({ type: Boolean, reflect: true })
+  formnovalidate = false;
+
+  @property({ type: String, reflect: true })
+  formtarget?: '_self' | '_blank' | '_parent' | '_top';
+
+  @property({ type: String, reflect: true })
+  name?: string;
+
+  @property({ type: String, reflect: true })
+  value?: string;
+
+  @property({ type: String, reflect: true })
+  type?: 'button' | 'submit' | 'reset' | 'menu';
 
   /**
    * Component lifecycle method that runs when the component is inserted
@@ -170,12 +206,29 @@ export class Button extends LitElement {
    */
   override render() {
     return html`
-      <button class="${this.appearance}">
+      <button
+        class="${this.appearance}"
+        aria-label="${this.ariaLabel || nothing}"
+        form="${ifDefined(this.form)}"
+        formaction="${ifDefined(this.formaction)}"
+        formenctype="${ifDefined(this.formenctype)}"
+        formmethod="${ifDefined(this.formmethod)}"
+        ?formnovalidate=${this.formnovalidate}
+        formtarget="${ifDefined(this.formtarget)}"
+        name="${ifDefined(this.name)}"
+        value="${ifDefined(this.value)}"
+        type="${this.type || 'button'}"
+        ?autofocus=${this.autofocus}
+        ?disabled=${this.disabled}
+      >
         <span class="start">
           <slot name="start"></slot>
         </span>
         <span class="content">
           <slot></slot>
+        </span>
+        <span class="end">
+          <slot name="end"></slot>
         </span>
       </button>
     `;

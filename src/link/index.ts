@@ -2,7 +2,9 @@ import { html, css, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
 
-@customElement('vscode-link')
+const COMPONENT_NAME = 'vscode-link';
+
+@customElement(COMPONENT_NAME)
 export class Link extends LitElement {
   static override styles = css`
     :host a {
@@ -18,7 +20,7 @@ export class Link extends LitElement {
     }
   `;
 
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   href = '';
 
   @property({ type: String })
@@ -27,22 +29,22 @@ export class Link extends LitElement {
   @property({ type: String })
   hreflang?: string;
 
-  @property({ type: String })
-  target?: string;
+  @property({ type: String, reflect: true })
+  target?: '_self' | '_blank' | '_parent' | '_top';
 
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   rel?: string;
 
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   download?: string;
 
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   ping?: string;
 
   @property({ type: String })
   referrerpolicy?: string;
 
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   type?: string;
 
   override render() {
@@ -66,6 +68,6 @@ export class Link extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'vscode-link': Link;
+    [COMPONENT_NAME]: Link;
   }
 }

@@ -23,7 +23,7 @@ Check our issue list for the current status of the components.
 ### Existing component support
 
 - [x] badge
-- [ ] button
+- [x] button
 - [ ] checkbox
 - [ ] data-grid
 - [x] divider
