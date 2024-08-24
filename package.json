@@ -10,6 +10,7 @@
     "compile": "tsc",
     "build:watch": "tsc --watch",
     "dev:start": "npm run build:watch & npm run serve",
+    "export-codicons": "node ./scripts/export-codicons.js",
     "clean": "rimraf dist",
     "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
     "lint:eslint": "eslint 'src/**/*.ts'",
@@ -30,6 +31,7 @@
   "author": "Elio Struyf <elio@struyfconsulting.be>",
   "license": "MIT",
   "dependencies": {
+    "@vscode/codicons": "^0.0.36",
     "lit": "^3.2.0"
   },
   "devDependencies": {

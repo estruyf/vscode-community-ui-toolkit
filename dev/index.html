@@ -126,28 +126,28 @@
 
         <div class="buttons">
           <vscode-button appearance="primary">Button Text</vscode-button>
-          <vscode-button appearance="primary" disabled="disabled">
+          <vscode-button appearance="primary" disabled>
             Disabled button
           </vscode-button>
           <vscode-button appearance="secondary">Button Text</vscode-button>
-          <vscode-button appearance="secondary" disabled="disabled">
+          <vscode-button appearance="secondary" disabled>
             Disabled secondary button
           </vscode-button>
           <vscode-button appearance="primary">
-            <span slot="start" class="codicon codicon-plus"></span>
+            <vscode-icon slot="start" name="plus"></vscode-icon>
             <span>Add</span>
           </vscode-button>
           <vscode-button appearance="primary">
             <span>Delete</span>
-            <span slot="end" class="codicon codicon-trash"></span>
+            <vscode-icon slot="end" name="trash"></vscode-icon>
           </vscode-button>
           <vscode-button appearance="primary">
-            <span slot="start" class="codicon codicon-warning"></span>
+            <vscode-icon slot="start" name="warning"></vscode-icon>
             <span>Warning</span>
-            <span slot="end" class="codicon codicon-warning"></span>
+            <vscode-icon slot="end" name="warning"></vscode-icon>
           </vscode-button>
           <vscode-button appearance="icon">
-            <span class="codicon codicon-check"></span>
+            <vscode-icon name="check"></vscode-icon>
           </vscode-button>
         </div>
 
@@ -181,6 +181,23 @@
             >Link with title</vscode-link
           >
           <vscode-link href="#" hreflang="nl">Link with hreflang</vscode-link>
+        </div>
+
+        <h3>vscode-icon</h3>
+
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            gap: 0.5em;
+            align-items: center;
+          "
+        >
+          <vscode-icon name="check"></vscode-icon>
+          <vscode-icon name="loading" spin></vscode-icon>
+          <vscode-icon name="sync" spin></vscode-icon>
+          <vscode-icon name="gear" spin></vscode-icon>
+          <vscode-icon name="gear" size="32px"></vscode-icon>
         </div>
       </div>
 
@@ -214,20 +231,20 @@
             Disabled secondary button
           </vscode-button>
           <vscode-button appearance="primary">
-            <span slot="start" class="codicon codicon-plus"></span>
+            <vscode-icon slot="start" name="plus"></vscode-icon>
             <span>Add</span>
           </vscode-button>
           <vscode-button appearance="primary">
             <span>Delete</span>
-            <span slot="end" class="codicon codicon-trash"></span>
+            <vscode-icon slot="end" name="trash"></vscode-icon>
           </vscode-button>
           <vscode-button appearance="primary">
-            <span slot="start" class="codicon codicon-warning"></span>
+            <vscode-icon slot="start" name="warning"></vscode-icon>
             <span>Warning</span>
-            <span slot="end" class="codicon codicon-warning"></span>
+            <vscode-icon slot="end" name="warning"></vscode-icon>
           </vscode-button>
           <vscode-button appearance="icon">
-            <span class="codicon codicon-check"></span>
+            <vscode-icon name="check"></vscode-icon>
           </vscode-button>
         </div>
 
@@ -261,6 +278,23 @@
             >Link with title</vscode-link
           >
           <vscode-link href="#" hreflang="nl">Link with hreflang</vscode-link>
+        </div>
+
+        <h3>vscode-icon</h3>
+
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            gap: 0.5em;
+            align-items: center;
+          "
+        >
+          <vscode-icon name="check"></vscode-icon>
+          <vscode-icon name="loading" spin></vscode-icon>
+          <vscode-icon name="sync" spin></vscode-icon>
+          <vscode-icon name="gear" spin></vscode-icon>
+          <vscode-icon name="gear" size="32px"></vscode-icon>
         </div>
       </div>
     </div>
