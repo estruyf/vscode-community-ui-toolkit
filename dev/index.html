@@ -16,12 +16,12 @@
         const style = document.querySelector('link[id="vscode-theme"]');
         style.href = `${theme}.css`;
 
-        const buttons = document.querySelectorAll("nav button");
+        const buttons = document.querySelectorAll('nav button');
         buttons.forEach((button) => {
-          button.style.fontWeight = "normal";
+          button.style.fontWeight = 'normal';
         });
 
-        document.querySelector(`#${theme}`).style.fontWeight = "bold";
+        document.querySelector(`#${theme}`).style.fontWeight = 'bold';
       };
     </script>
     <style>
@@ -137,6 +137,15 @@
             <span slot="start" class="codicon codicon-plus"></span>
             <span>Add</span>
           </vscode-button>
+          <vscode-button appearance="primary">
+            <span>Delete</span>
+            <span slot="end" class="codicon codicon-trash"></span>
+          </vscode-button>
+          <vscode-button appearance="primary">
+            <span slot="start" class="codicon codicon-warning"></span>
+            <span>Warning</span>
+            <span slot="end" class="codicon codicon-warning"></span>
+          </vscode-button>
           <vscode-button appearance="icon">
             <span class="codicon codicon-check"></span>
           </vscode-button>
@@ -207,6 +216,15 @@
           <vscode-button appearance="primary">
             <span slot="start" class="codicon codicon-plus"></span>
             <span>Add</span>
+          </vscode-button>
+          <vscode-button appearance="primary">
+            <span>Delete</span>
+            <span slot="end" class="codicon codicon-trash"></span>
+          </vscode-button>
+          <vscode-button appearance="primary">
+            <span slot="start" class="codicon codicon-warning"></span>
+            <span>Warning</span>
+            <span slot="end" class="codicon codicon-warning"></span>
           </vscode-button>
           <vscode-button appearance="icon">
             <span class="codicon codicon-check"></span>
