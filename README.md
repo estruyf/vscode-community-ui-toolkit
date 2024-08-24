@@ -40,7 +40,7 @@ Check our issue list for the current status of the components.
 
 ### New components
 
-- [ ] icon
+- [x] icon
 - [x] label
 - [ ] loader
 - [ ] ...
