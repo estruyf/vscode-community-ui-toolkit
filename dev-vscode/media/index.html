@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VSCode Extension Webview</title>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+
+<body onload="onLoad()">
+  <iframe id="uiToolkitIframe" src="http://localhost:8000/dev/index.html"></iframe>
+  <script>
+    function onLoad() {
+      applyTheme(document.body.className);
+      // observe changes of theme and refresh the theme in the iframe
+      var observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutationRecord) {
+          applyTheme(mutationRecord.target.className);
+        });
+      });
+
+      var target = document.body;
+      observer.observe(target, { attributes: true, attributeFilter: ['class'] });
+    }
+
+    function applyTheme(newTheme) {
+      const iframe = document.getElementById('uiToolkitIframe');
+      const vscodeStyle = document.documentElement.style;
+      let styleString = '';
+
+      for (let i = 0; i < vscodeStyle.length; i++) {
+        const property = vscodeStyle[i];
+        const value = vscodeStyle.getPropertyValue(property);
+        styleString += `${property}: ${value}; `;
+      }
+
+      // send the style to the iframe
+      iframe.contentWindow.postMessage(styleString, '*');
+    }
+
+  </script>
+</body>
+
+</html>
