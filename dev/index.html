@@ -23,6 +23,17 @@
 
         document.querySelector(`#${theme}`).style.fontWeight = 'bold';
       };
+      
+      // when hosting this page in the VSCode dev extension, update the theme on changes from the host
+      window.addEventListener('message', event => {
+        if (event.origin.startsWith("vscode-webview")) {
+          document.body.style = event.data;
+
+          //remove elements with id=navigation
+          const navigation = document.getElementById('navigation');
+          navigation.remove();
+        }
+      }, false);
     </script>
     <style>
       body {
@@ -77,7 +88,7 @@
     </style>
   </head>
   <body>
-    <nav>
+    <nav id="navigation">
       <button
         id="light"
         style="font-weight: bold"
